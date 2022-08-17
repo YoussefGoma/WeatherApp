@@ -7,7 +7,7 @@ let cityoutput = document.querySelector(".cityoutput");
 let tempoutput = document.querySelector(".tempoutput");
 let descoutput = document.querySelector(".descoutput");
         function fetchWeather(city){
-        fetch("http://api.weatherstack.com/current?access_key="+APIKEY+"&query="+city)
+        fetch("https://api.weatherstack.com/current?access_key="+APIKEY+"&query="+city)
         .then((response) => response.json())
         .then((data) => {
             const name = data["location"]["name"];
